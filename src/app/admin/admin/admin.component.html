@@ -1,9 +1,15 @@
-<section>
-    <header>
-      <h1>Liste des sessions de formation </h1>
-    </header>
-   <!-- <app-session-item [session]="firstSession"></app-session-item>-->
-   <app-session-add-form></app-session-add-form>
-  <app-session-item-list></app-session-item-list>
-  <app-session-edit-form></app-session-edit-form>
-  </section>
+<nav>
+  <a routerLink="./list" routerLinkActive="active">
+  <img src="assets/list.png" height="80" width="80"  class="icon" />
+  </a>
+  <a routerLink="./add" routerLinkActive="active">
+  <img src="assets/add.png" height="90" width="97" class="icon" />
+  </a>
+  <a [routerLink]="['./edit', 1]" routerLinkActive="active">
+  <img src="assets/edit.png" height="100" width="95" class="icon" />
+  </a>
+ </nav>
+ <section>
+  <router-outlet></router-outlet>
+ </section>
+ 

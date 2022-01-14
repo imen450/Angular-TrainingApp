@@ -4,7 +4,7 @@
 }
 section {
 width: 100%;
-background-color: #32435b;
+background-color: #3d4d63;
 }
 section > header {
 color: #ffffff;
@@ -16,3 +16,8 @@ font-size: 2em;
 section > header .description {
 font-style: italic;
 }
+nav{
+    width: 6%;
+    background-color: #1cace6;
+}
+

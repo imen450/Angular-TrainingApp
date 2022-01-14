@@ -1,4 +1,13 @@
+<header>
+    <h1>Liste des sessions de formation </h1>
+    <p class="description">Suivre les sessions que je  veux participer.</p>
+   </header>
 <section>
     <app-session-item *ngFor="let sessionItem of sessionItems" [session]="sessionItem"
     [ngClass]="{'session-web': sessionItem.name === 'Web', 'session-mobile': sessionItem.name ==='Mobile'}"></app-session-item>
 </section>
+<footer>
+    <a routerLink="/admin" routerLinkActive="active">
+    <img src="https://findicons.com/files/icons/126/sleek_xp_basic/300/administrator.png" class="icon" />
+    </a>
+</footer>

@@ -6,6 +6,8 @@ export class FakeSessionItemService {
 
   constructor() { }
   get() { return SESSIONITEMS; }
+  getSession(id: number) {
+    return SESSIONITEMS[id - 1];}   
   add(sessionItem: any) {
     sessionItem.id = SESSIONITEMS.length + 1;
     SESSIONITEMS.push(sessionItem);
